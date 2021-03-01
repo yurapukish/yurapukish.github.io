@@ -1,0 +1,274 @@
+/* reset */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    color: #c0c0c0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+aside{
+        
+    padding: 20px 20px 50px;
+    max-width: 470px;
+    min-height: 1419px;
+    background-image: url("../image/bga.png");
+    display:flex;
+    flex-direction: column;
+}
+.resume_photo{
+
+    display: block;
+    max-width: 400px;
+    height: 600px;
+    margin-bottom: 30px;
+    box-shadow: 0px 11px 18px 5px rgba(0,0,0,0.68);
+    border-radius: 6px;
+
+
+}
+.maincontainer{
+    display:flex;
+    flex-direction: row;
+    max-width: 1366px;
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.7);
+}
+
+
+.first{
+    font-family: 'Libre Baskerville',serif;
+    padding: 100px 40px 50px;
+    
+    width:95%;
+    box-sizing: border-box;
+    min-height: 1419px;
+    background-image:url("../image/bgi.png");
+    box-shadow: 5px 9px 20px 0px rgba(0, 0, 0, 0.15);
+    
+}
+.fa-mobile:before {
+    content: "\f10b";
+    width: 15px;
+    height: 15px;
+    color: #ff6600;
+}
+
+.fa-at:before {
+    content: "\f1fa";
+    color: #ff6600;
+    width: 15px;
+    height: 15px;
+}
+
+.tech-skills, .languges,.education, .passions{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-top: -9px;
+    margin-bottom: -5px;
+}
+
+ul{
+    list-style: none;
+     
+}
+
+.ford{
+    padding-top:-50px;
+    margin-top: -22px;
+    padding-right: 8%px;
+    text-align: right;
+    font-family: 'Redressed',cursive;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-shadow: 0px 8px 13px rgba(0,0,0,0.71);
+}
+
+.aside-font{
+    font-size: 26px;
+    padding-left: 30px;
+    color: #fff;
+    text-shadow: 0px 8px 13px rgba(0,0,0,0.71);
+    position: relative;
+}
+
+
+.h4_font{ 
+    
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #b33110;
+    margin-bottom: 5px;
+    text-shadow: 0px 8px 13px rgba(0,0,0,0.71);
+    font-weight: 700;
+}
+.content_font{
+    
+    margin-top: -7px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 550;
+    letter-spacing: 0.03em;
+    color:#c0c0c0;
+}
+
+
+
+
+ul li::before {
+
+    content: "-";
+      /* юникод точки */
+    color: #ff6600;
+      /* Менять цвет */
+    font-weight: bold;
+      /* Менять жирность */
+    display: inline-block;
+      /* Расстояние между точкой и текстом */
+    width: 18px;
+      /* Задать значение расстояния */
+  }
+
+
+
+.contact__phone {
+    margin-bottom: 10px;
+}
+
+.contact__phone-link,
+.contact__mail-link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    padding-left: 8%;
+    text-decoration: none;
+    position: relative;
+    transition: all .3s;
+}
+
+.contact__phone-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    
+    background-repeat: no-repeat;
+}
+
+.contact__phone-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background-color: #ff6600;
+    transition: all .5s;
+}
+
+.contact__phone-link:hover {
+    color: #ff6600;
+}
+
+.contact__phone-link:hover::after {
+    width: 108%;
+    left: -12px;
+}
+
+.contact__mail-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    
+    background-repeat: no-repeat;
+}
+
+.contact__mail-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background-color: #ff6600;
+    transition: all 0.5s;
+}
+
+.contact__mail-link:hover {
+    color: #ff6600;
+}
+
+.contact__mail-link:hover::after {
+    width: 106%;
+    left: -15px;
+}
+
+.contact__box {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.contact__social-link {
+    text-decoration: none;
+    padding: 10px;
+    transition: all 1.5s;
+    display: inline-block;
+}
+
+.contact__social-link:hover {
+    transition: all 1.0s;
+    transform: rotateY(360deg);
+}
+
+.contact__social-link path {
+    fill: #c0c0c0;
+    transition: all .3s;
+}
+
+.contact__social-link:hover path {
+    fill: #ff6000;
+}
+
+
+
+
+.link_a{
+    color:#c0c0c0;
+    font-size: 17px;
+    line-height: 24px;
+    transition: all .3s;
+}
+
+.link_a:hover {
+    color: #ff6600;
+    transition: all 0.5s;
+    
+}
+
