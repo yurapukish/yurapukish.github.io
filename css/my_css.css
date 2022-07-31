@@ -27,8 +27,10 @@ aside{
     flex-direction: column;
 }
 .resume_photo{
-
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     max-width: 400px;
     height: 600px;
     margin-bottom: 30px;
