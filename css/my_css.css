@@ -20,7 +20,7 @@ body{
 aside{
         
     padding: 20px 20px 50px;
-    max-width: 470px;
+    width:30%;
     min-height: 1419px;
     background-image: url("../image/bga.png");
     display:flex;
@@ -31,7 +31,7 @@ aside{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    max-width: 400px;
+    max-width: 900px;
     height: 600px;
     margin-bottom: 30px;
     box-shadow: 0px 11px 18px 5px rgba(0,0,0,0.68);
@@ -54,7 +54,7 @@ aside{
     font-family: 'Libre Baskerville',serif;
     padding: 100px 40px 50px;
     
-    width:95%;
+    width:70%;
     box-sizing: border-box;
     min-height: 1419px;
     background-image:url("../image/bgi.png");
@@ -75,7 +75,7 @@ aside{
     height: 15px;
 }
 
-.tech-skills, .languages,.education, .passions{
+.tech-skills, .languages, .education, .passions{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
