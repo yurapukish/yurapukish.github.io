@@ -205,7 +205,8 @@
       cursor: not-allowed;
     }
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <!-- Required for jsPDF html() rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script src="https://unpkg.com/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
   <script>
     function generatePDF() {
@@ -272,7 +273,8 @@
 </head>
 <body>
   <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;" class="no-print">
-    <button class="print-button" onclick="generatePDF()">📥 Download PDF</button>
+    <a class="print-button" href="YuriiPukishCV.pdf" download="YuriiPukishCV.pdf" style="display:inline-block; text-decoration:none; text-align:center;">📥 Download PDF</a>
+    <button class="print-button" style="margin-left:10px;background:#718096" onclick="printPDF()">🖨️ Save as PDF (Best)</button>
   </div>
   <script>
     // Auto-generate PDF if autoDownload parameter is present
@@ -474,8 +476,8 @@
       <p>
         I'm constantly learning and expanding my skills. I’m passionate about projects that combine AI and automation testing, 
         where I can apply my knowledge to build intelligent and efficient solutions.
-        I actively study business literature and recently started preparing for the ISTQB Testing AI certification. 
-        I’ve completed several Python courses for developers, Python QA Automation programs, and a Python LangChain course for AI development.
+        I actively study business literature and recently started preparing for the <a href="https://certifi-qa-te.com/istqb-ai-testing" target="_blank" rel="noopener">ISTQB Testing AI certification</a>. 
+        I’ve completed several Python courses for developers, <a href="image/98216315_en.png" target="_blank" rel="noopener">Python QA Automation programs</a>, and a Python LangChain course for AI development.
       </p>
     </div>
     <br>
