@@ -206,35 +206,61 @@
     }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://unpkg.com/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
   <script>
     function generatePDF() {
+      // Generate selectable-text PDF and keep links clickable
+      window.scrollTo(0, 0);
+
+      const { jsPDF } = window.jspdf || {};
+      if (!jsPDF) {
+        alert('PDF engine failed to load. Please reload the page and try again.');
+        return;
+      }
+
       const element = document.querySelector('.resume-container');
-      const opt = {
-        margin: 1,
-        filename: 'Yurii_Pukish_Resume.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'cm', format: 'a4', orientation: 'portrait' }
-      };
-      
+
       // Show loading message
       const buttons = document.querySelectorAll('.print-button');
       const originalTexts = Array.from(buttons).map(btn => btn.textContent);
-      buttons[0].textContent = '⏳ Generating PDF...';
+      if (buttons[0]) buttons[0].textContent = '⏳ Generating PDF...';
       buttons.forEach(btn => btn.disabled = true);
-      
-      html2pdf().set(opt).from(element).save().then(function() {
-        buttons.forEach((btn, index) => {
-          btn.textContent = originalTexts[index];
-          btn.disabled = false;
-        });
-      }).catch(function(error) {
-        console.error('PDF generation error:', error);
-        buttons.forEach((btn, index) => {
-          btn.textContent = originalTexts[index];
-          btn.disabled = false;
-        });
-        alert('Error generating PDF. Please use Print/Save as PDF instead.');
+
+      const doc = new jsPDF('p', 'pt', 'a4');
+      const pageWidth = doc.internal.pageSize.getWidth();
+      const pageHeight = doc.internal.pageSize.getHeight();
+      const margin = 36; // 0.5 in
+
+      // Render DOM to PDF keeping text as text
+      doc.html(element, {
+        x: margin,
+        y: margin,
+        html2canvas: { scale: 1.6, scrollY: 0, useCORS: true },
+        callback: function(docInst) {
+          // Add clickable link annotations over anchors
+          const containerRect = element.getBoundingClientRect();
+          const renderWidth = pageWidth - margin * 2;
+          const scale = renderWidth / containerRect.width;
+          const anchors = element.querySelectorAll('a[href]');
+          anchors.forEach(a => {
+            try {
+              const r = a.getBoundingClientRect();
+              const x = margin + (r.left - containerRect.left) * scale;
+              const y = margin + (r.top - containerRect.top) * scale;
+              const w = Math.max(8, r.width * scale);
+              const h = Math.max(8, r.height * scale);
+              if (x >= 0 && y >= 0 && x + w <= pageWidth && y + h <= pageHeight) {
+                docInst.link(x, y, w, h, { url: a.href });
+              }
+            } catch (e) {}
+          });
+
+          docInst.save('Yurii_Pukish_Resume.pdf');
+          buttons.forEach((btn, index) => {
+            btn.textContent = originalTexts[index];
+            btn.disabled = false;
+          });
+        }
       });
     }
     
@@ -253,9 +279,8 @@
     window.addEventListener('load', function() {
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.get('autoDownload') === 'true') {
-        setTimeout(function() {
-          generatePDF();
-        }, 800);
+        window.scrollTo(0, 0);
+        setTimeout(function() { generatePDF(); }, 800);
       }
     });
     
@@ -476,8 +501,6 @@
       </div>
       <li>Other automation experiences: Reading PDF files, Testing Database migrations.</li>
     </ul>
-
-    
   </div>
 
   </div>
