@@ -1,189 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/my_css.css" />
-    <title>QA Engineer</title>
+    <title>QA Engineer - Yurii Pukish</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/343823edf0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   </head>
   <body>
-   
-    <!--main container-->
       <div class="maincontainer">
-        <!--aside bar-->
+      <!-- Sidebar -->
         <aside>
-          <img  class="resume_photo" src="./image/my_face.jpg" alt="my photo" width="100%" align="center">
-          <!--CONTACTS-->
-          <div>
-          <h2 class="aside-font">Contacts</h2>
-          <div class="contact__phone">
-              <i class="fas fa-mobile"></i>
-              <a class="contact__phone-link" href="tel:+380507009231">
-                +380500709231 (viber, telegram)
+        <div class="sidebar-content">
+          <img class="resume_photo" src="./image/my_face.jpg" alt="Yurii Pukish">
+          
+          <section class="sidebar-section">
+            <h2 class="section-title">
+              <i class="fas fa-user" aria-hidden="true"></i> Contacts
+            </h2>
+            <div class="contact-item">
+              <i class="fas fa-mobile-alt"></i>
+              <a href="tel:+380500709231" class="contact-link">+380 50 070 9231</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-mobile-alt"></i>
+              <a href="tel:+34673843768" class="contact-link">+34 673 843 768</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:yurapykish@gmail.com" class="contact-link">yurapykish@gmail.com</a>
+            </div>
+            <div class="social-links">
+              <a href="https://t.me/yurapykish" title="Telegram" target="_blank" class="social-link">
+                <i class="fab fa-telegram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/yurapykish/" title="LinkedIn" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
               </a>
           </div>
-            <div class="contact__phone">
-              <i class="fas fa-mobile"></i>
-              <a class="contact__phone-link" href="tel:+380507009231">
-                +34673843768 (whatsup, telegram)
-              </a>
-          </div>
-          <div class="contact__mail">
-            <i class="fas fa-at" ></i>
-            <a class="contact__mail-link" href="mailto:yurapykish@gmail.com">
-              yurapykish@gmail.com
-            </a>
-          </div>
-          <div class="contact__box">
-            <a class="contact__social-link" href="https://t.me/yurapykish" title="Telegram" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 15 15" version="1.1">
-                <g>
-                  <path
-                    d="M 12.890625 0.191406 L 0.703125 7.21875 C -0.304688 7.800781 -0.207031 9.292969 0.871094 9.734375 L 4.21875 11.121094 L 4.21875 13.59375 C 4.21875 14.953125 5.953125 15.511719 6.757812 14.429688 L 8.039062 12.699219 L 11.316406 14.054688 C 11.488281 14.125 11.671875 14.160156 11.851562 14.160156 C 12.09375 14.160156 12.332031 14.097656 12.546875 13.976562 C 12.921875 13.765625 13.179688 13.390625 13.246094 12.96875 L 14.984375 1.625 C 15.164062 0.449219 13.902344 -0.390625 12.890625 0.191406 Z M 5.625 13.59375 L 5.625 11.703125 L 6.695312 12.144531 Z M 11.851562 12.753906 L 7.347656 10.890625 L 11.453125 4.964844 C 11.769531 4.511719 11.175781 3.984375 10.761719 4.34375 L 4.5625 9.742188 L 1.40625 8.4375 L 13.59375 1.40625 Z M 11.851562 12.753906 " />
-                </g>
-              </svg>
-            </a>
-            <a class="contact__social-link" href="https://www.linkedin.com/in/yurapykish/" title="Linkedin" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 15 15" version="1.1">
-                <g>
-                  <path
-                    d="M 3.359375 13.125 L 0.246094 13.125 L 0.246094 4.363281 L 3.359375 4.363281 Z M 1.800781 3.167969 C 0.804688 3.167969 0 2.445312 0 1.578125 C 0 0.707031 0.804688 0 1.800781 0 C 2.796875 0 3.601562 0.707031 3.601562 1.574219 C 3.601562 2.445312 2.796875 3.167969 1.800781 3.167969 Z M 14.996094 13.125 L 11.894531 13.125 L 11.894531 8.859375 C 11.894531 7.84375 11.871094 6.539062 10.277344 6.539062 C 8.660156 6.539062 8.410156 7.644531 8.410156 8.785156 L 8.410156 13.125 L 5.304688 13.125 L 5.304688 4.363281 L 8.289062 4.363281 L 8.289062 5.558594 L 8.332031 5.558594 C 8.746094 4.867188 9.761719 4.140625 11.273438 4.140625 C 14.421875 4.140625 15 5.957031 15 8.3125 L 15 13.125 Z M 14.996094 13.125 " />
-                </g>
-              </svg>
-            </a>
-            <a class="contact__social-link" href="https://www.facebook.com/yura.pukish.7" title="Facebook" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 15 15" version="1.1">
-                <g>
-                  <path
-                    d="M 14.765625 7.5 C 14.765625 3.484375 11.515625 0.234375 7.5 0.234375 C 3.484375 0.234375 0.234375 3.484375 0.234375 7.5 C 0.234375 11.125 2.890625 14.132812 6.363281 14.679688 L 6.363281 9.601562 L 4.519531 9.601562 L 4.519531 7.5 L 6.363281 7.5 L 6.363281 5.898438 C 6.363281 4.078125 7.449219 3.074219 9.109375 3.074219 C 9.902344 3.074219 10.734375 3.214844 10.734375 3.214844 L 10.734375 5 L 9.820312 5 C 8.917969 5 8.636719 5.5625 8.636719 6.136719 L 8.636719 7.5 L 10.648438 7.5 L 10.328125 9.601562 L 8.636719 9.601562 L 8.636719 14.679688 C 12.109375 14.132812 14.765625 11.125 14.765625 7.5 Z M 14.765625 7.5 " />
-                </g>
-              </svg>
-            </a>
-          </div>
-          <!--TECH SKILLS-->
+          </section>
 
-          <div class="contact__mail">
-            <h2 class="aside-font">Languages</h2>
-            <ul>
-            <li style="font-size: 18px; color: #fff">Ukrainian - Native</li>
-            <li style="font-size: 18px; color: #fff">English - Upper-Intermediate (B2)</li>
+          <section class="sidebar-section">
+            <h2 class="section-title">
+              <i class="fas fa-language" aria-hidden="true"></i> Languages
+            </h2>
+            <ul class="languages-list">
+              <li><strong>Ukrainian</strong> - Native</li>
+              <li><strong>English</strong> - B2</li>
             </ul>
+          </section>
           </div>
         </aside>
 
-        <!--Finished-->
-        <!--right side of page-->
-        <div class="first">
-          <div class="aboutme">
-            <!--about me-->
-              <h2 class="aside-font">General QA Engineer</h2>
-              <h1 class="aside-font">Yurii Pukish</h1>
-              <!---->
-              <p class="ford">"I Want It and I'll Have It"</p>
-              <p class="ford" style="color: #ff6b08;">Henry Ford</p>
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header with Tech Stack -->
+        <section class="content-section" id="header">
+          <div class="section-header">
+            <div class="header-left">
+              <h1 class="name">Yurii Pukish</h1>
+              <h2 class="position">General QA Engineer</h2>
+              <div class="web-resume-link">
+                <a href="https://yurapukish.github.io/" target="_blank" class="resume-link">
+                  <i class="fas fa-globe"></i> Web Resume: yurapukish.github.io
+                </a>
+              </div>
+              <!-- Tech Stack - Below Name -->
+              <div class="tech-stack-container">
+                <div class="tech-stack-showcase">
+                <div class="tech-stack-item">
+                  <i class="devicon-python-plain" aria-hidden="true"></i>
+                  <span>Python</span>
+                </div>
+                <div class="tech-stack-item">
+                  <i class="fab fa-python" aria-hidden="true"></i>
+                  <span>Pytest</span>
+                </div>
+                <div class="tech-stack-item">
+                  <i class="fas fa-theater-masks" aria-hidden="true"></i>
+                  <span>Playwright</span>
+                </div>
+                <div class="tech-stack-item">
+                  <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                  <span>Requests</span>
+                </div>
+                <div class="tech-stack-item">
+                  <i class="fab fa-bitbucket" aria-hidden="true"></i>
+                  <span>Bitbucket</span>
+                </div>
+                <div class="tech-stack-item">
+                  <i class="fas fa-database" aria-hidden="true"></i>
+                  <span>MongoDB</span>
+                </div>
+                <div class="tech-stack-item">
+                  <i class="fas fa-brain" aria-hidden="true"></i>
+                  <span>LangChain</span>
+                </div>
+                <div class="tech-stack-item">
+                  <i class="fas fa-vial" aria-hidden="true"></i>
+                  <span>Allure</span>
           </div>
-
-          <!--work experience related-->
-          <h3 class="aside-font">Working Experience 4,5+ years</h3>
-            <div class="content_font">
-              <h4 class="h4_font">ISRAEL IT</h4>
-              <span>(September 22 - Now)</span><br>
-              <span style="font-size:16px">Project:<b style="color: #ff6600;"> ViboDJ - Music & Event Planning Tool for DJs</b></span><br><br>
-              <span>Website: <a class="link_a" href="https://vibodj.com/">Vibodj.com,</a></span>
-              <span><a class="link_a" href="https://apps.apple.com/us/app/vibo-2-0/id1523045467">App Store,</a></span>
-              <span><a class="link_a" href="https://play.google.com/store/apps/details?id=com.vibodj&hl=en_IN&gl=US&pli=1"> Google Play</a></span><br>
-
-            <strong>Main responsibilities and achievements:</strong>
-            <ul>
-              <li>
-                API Automation: Developed a testing framework covering 95% of endpoints, streamlining the process and supporting 1300+ automated tests.
-                Tools: Python, Pytest, Requests, Allure, Parallel execution.
-              </li>
-              <li>
-                Web Automation: Built and maintained a testing framework.
-                Tools: Python, Pytest, Playwright, Allure, Parallel execution.
-              </li>
-              <li>Worked with MongoDB for testing and data validation purposes.</li>
-              <li>Completed Python LangChain AI courses; applied automation with Zapier and N8N in current projects.</li>
-              <li>Implemented and improved QA processes as well as software development workflows.</li>
-              <li>Ensured stable functionality across Web, Android, iOS platforms, and backend infrastructure.</li>
-              <li>Conducted Regression, Smoke, and Compatibility testing.</li>
-              <li>Created and maintained test documentation: Test Plans, Test Designs, Test Execution reports.</li>
-              <li>Handled defect management and managed customer complaints via Intercom.</li>
-            </ul>
-
-              <br>
-              <span>(March 21 - September 22)</span><br>
-              <span>Projects I was working on: </span><br>
-              <ul>
-                <li>Mobile social app for foodies.</li>
-                <li>Web project: Marketplace for classes, workshops and courses.</li>
-                <li>Wordpress websites.</li>
-              </ul>
-              <h2 class="h4_font">Automation Examples</h2>
-              <ul>
-                <div><li><spam>API Testing (Pytest, Requests).</spam></li>
-                  <a href="image/API.png" target="_blank">
-                    <img src="image/API.png" alt="API" style="width: 550px; height: auto;">
-                  </a>
+                <div class="tech-stack-item">
+                  <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                  <span>Qase</span>
                 </div>
-                <br>
-                <div><li><spam>Performance testing (Locust report).</spam></li>
-                  <a href="image/300user.html" target="_blank">
-                    <img src="image/locust.png" alt="API" style="width: 550px; height: auto;">
-                  </a>
+                <div class="tech-stack-item">
+                  <i class="fab fa-cc-stripe" aria-hidden="true"></i>
+                  <span>Stripe</span>
                 </div>
-                <div>
-                  <li>UI testing (Playwright)</li>
-
-                    <video controls width="600">
-                      <source src="image/play.mov" alt="Playwright" type="video/mp4">
-                    </video>
+                <div class="tech-stack-item">
+                  <i class="fas fa-comments" aria-hidden="true"></i>
+                  <span>Intercom</span>
                 </div>
-                <li>Other automation experiences: Reading PDF files, Testing Database migrations.</li>
-              </ul>
-<!--              <span>Technologies I was using-->
-<!--                on projects:</span>-->
-<!--              <ul>-->
-<!--                <li>Automate API testing -> Used Pytest, Request, Allure reporting.  </li>-->
-<!--                <li>Manual mobile testing, ADB, Android Studio, Browserstack, LambdaTest.</li>-->
-<!--                <li>Providing Performance testing via Locust.</li>-->
-<!--                <li>Manual Functional testing, Non functional testing, Regression testing.</li>-->
-<!--                <li>Working with testing Artifacts.</li>-->
-<!--                <li>Analyse/write requirements.</li>-->
-<!--              </ul>-->
-
+              </div>
             </div>
+            </div>
+            
+            <!-- Download PDF - Right Side -->
+            <div class="download-pdf">
+              <a href="Yurii Pukish - QA Engineer Resume.pdf" download="Yurii Pukish - QA Engineer Resume.pdf" class="pdf-button">
+                <i class="fas fa-file-pdf"></i> Download PDF Resume
+              </a>
+            </div>
+          </div>
+        </section>
 
-<!--              <div class="content_font">-->
-<!--            <h2 class="h4_font">Tech Skills</h2>-->
-<!--            <ul>-->
-<!--              <li>HTML, CSS, Devtools</li>-->
-<!--              &lt;!&ndash; <li>JavaScript <span style = "color : #c0c0c0">(basic lvl)</span> </li>&ndash;&gt;-->
-<!--              <li>Python <a class="link_a" href="https://stepik.org/course/575/" title="Stepic" target="_blank">(finished automation course with Selenium and Pytest)</a></li>-->
-<!--              <li>GIT <a class="link_a" href="https://github.com/yurapukish?tab=repositories" title="Git repo" target="_blank">(add, commit, push, pull, branch, remote, merging)</a></li>-->
-<!--              <li>API: Swagger, <a class="link_a" href="https://github.com/yurapukish/API" title="Postman" target="_blank">Postman</a>, Python</li>-->
-<!--              <li>SQL <a class="link_a" href="https://github.com/yurapukish/sql-injections/tree/main/sql-academy" title="Sql" target="_blank">(solved 66/66 tasks on the sql-academy.org, made a presentation about Sql injection)</a> </li>-->
-<!--              <li>Jira, Confluence</li>-->
-<!--              <li>Bash <a class="link_a" href="https://github.com/yurapukish/linux_commands-script" title="Linux_command" target="_blank">(basic commands)</a></li>-->
-<!--              <li>Network Sniffers: Devtools, Charles, Fiddler (rewrite request/response, breakpoint, launch mobile device)</li>-->
-<!--              <li>Experience in ADB, Android Studio<a class="link_a" href="https://github.com/yurapukish/linux_commands-script" title="adb" target="_blank"> (install, push, pull, screencap, screenrec, shell, logcat)</a></li>-->
-<!--              <li>Performance: Jmeter, Apache Benchmark, Locust </li>-->
-<!--              <li><a class="link_a" href="image/300user.html" title="Locust" target="_blank">Locust report</a></li>-->
-<!--              <li><a class="link_a" href="image/Screenshot_3.jpg" title="report allure" target="_blank">Allure report</a></li>-->
-<!--            </ul>-->
-<!--            </div>-->
+        <!-- Key Advantages -->
+        <section class="content-section" id="advantages">
+          <h2 class="section-heading">
+            <span class="section-icon" aria-hidden="true"><i class="fas fa-star"></i></span> Key Advantages
+          </h2>
+          <div class="advantages-grid">
+            <div class="advantage-item">
+              <i class="fas fa-rocket"></i>
+              <div>
+                <h3>1300+ Automated Tests</h3>
+                <p>Built scalable API framework covering 95% of endpoints with optimized parallel execution</p>
+              </div>
+            </div>
+            <div class="advantage-item">
+              <i class="fas fa-mobile-alt"></i>
+              <div>
+                <h3>Cross-Platform</h3>
+                <p>Web, Android, iOS, Backend testing. Supporting multiple backend versions</p>
+              </div>
+            </div>
+            <div class="advantage-item">
+              <i class="fas fa-database"></i>
+              <div>
+                <h3>Database & Migration Testing</h3>
+                <p>Database work and migration testing</p>
+              </div>
+            </div>
+            <div class="advantage-item">
+              <i class="fas fa-headset"></i>
+              <div>
+                <h3>Customer Success & Integrations</h3>
+                <p>Worked with Stripe and Intercom. Supported customer success team</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-         
-        </div>
-      </div>
-      
+        <!-- About Section -->
+        <section class="content-section" id="about">
+          <h2 class="section-heading">
+            <span class="section-icon" aria-hidden="true"><i class="fas fa-user"></i></span> About
+          </h2>
+          <p class="about-text">
+            QA Engineer with 4.5+ years of experience in test automation. 
+            Expert in Python, Pytest, and Playwright. Specialized in building scalable testing frameworks, 
+            AI-powered testing solutions, and improving QA processes. Experience with API/Web automation, 
+            performance testing, and cross-platform quality assurance.
+          </p>
+        </section>
+
+        <!-- Experience & Projects Section -->
+        <section class="content-section" id="experience">
+          <h2 class="section-heading">
+            <span class="section-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span> Experience & Projects
+          </h2>
+          <div class="experience-list">
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3 class="company-name">Group 107</h3>
+                <span class="experience-period">Sep 2022 - Present</span>
+              </div>
+              <div class="role-title">General QA Engineer</div>
+              <div class="project-info">
+                <strong>ViboDJ</strong> - Multi-platform music & event planning tool for DJs
+  
+              </div>
+              <div class="project-tech-inline">
+                <span class="tech-tag-small">Python</span>
+                <span class="tech-tag-small">Pytest</span>
+                <span class="tech-tag-small">Playwright</span>
+                <span class="tech-tag-small">MongoDB</span>
+                <span class="tech-tag-small">Allure</span>
+              </div>
+              <ul class="experience-duties">
+                <li>Built API automation framework using Python and Pytest (1300+ tests, 95% coverage) with parallel execution. Set up CI/CD pipeline.</li>
+                <li>Built Web automation framework (100+ tests) with parallel execution</li>
+                <li>Cross-platform testing (Web, Android, iOS, Backend). Providing support for multiple backend versions.</li>
+                <li>MongoDB testing, data validation, and migration testing. Validated data in the database.</li>
+                <li>Integration with Stripe, Intercom, and AI tools (Zapier, N8N). Worked with customer success team.</li>
+                <li>Improved QA processes and workflow optimization.</li>
+                <li>Created test documentation (Test Plans, Test Designs, Reports).</li>
+                <li>Manual testing of Web and Mobile applications. Smoke testing, regression testing, etc.</li>
+        
+              </ul>
+            </div>
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3 class="company-name">Group 107</h3>
+                <span class="experience-period">Mar 2021 - Sep 2022</span>
+              </div>
+              <div class="role-title">QA Engineer</div>
+              <ul class="experience-duties">
+                <li>Mobile social app for foodies.</li><li>Marketplace for classes & workshops.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Beyond the Code Section -->
+        <section class="content-section" id="beyond-code">
+          <h2 class="section-heading">
+            <span class="section-icon" aria-hidden="true"><i class="fas fa-lightbulb"></i></span> Beyond the Code
+          </h2>
+          <div class="beyond-code-content">
+            <p class="beyond-text">
+              I'm constantly learning and expanding my skills. I've completed <strong>LangChain for Developers</strong> and <strong>ISTQB Testing AI</strong> courses, and I actively study business literature.
+            </p>
+            <p class="beyond-text">
+              I'm passionate about projects that combine AI and automation testing, where I can apply my knowledge to build intelligent and efficient solutions.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
-
